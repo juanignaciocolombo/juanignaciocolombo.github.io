@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="aframe.min.js"></script>
+    <script src="aframe-ar.js"></script>
+
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+<a-scene embedded arjs>
+
+
+<a-marker preset="kanji">
+	<a-plane height="1" width="1" rotation="-90 0 0"></a-plane>
+	<a-text value="CFP N&#167;405" color="blue"  rotation="-90 0 0" align="center" position="0 0.1 0"></a-text>	
+</a-marker>
+
+
+<a-marker preset="hiro">
+  <a-image src="cfp405.png" rotation="-90 0 0"></a-image>
+</a-marker>
+
+<a-entity camera></a-entity>
+
+</a-scene>
+
+    </body>
+</html>
