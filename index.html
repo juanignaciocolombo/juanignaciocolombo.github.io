@@ -14,10 +14,6 @@
 
 <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3_PARITY65;'; vr-mode-ui= "enabled: false">
 
-  <a-camera>
-    <a-cursor></a-cursor>
-  </a-camera>
-
   <a-assets>
  
       <img id="processing" src="Processing.png">
@@ -119,7 +115,9 @@
 </a-marker>
 
 
-
+<a-entity camera>
+  <a-cursor></a-cursor>
+</a-entity>
 
 
 </a-scene>
